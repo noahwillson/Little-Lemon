@@ -1,18 +1,17 @@
 import './App.css';
-import React from 'react';
+import React, { Fragment } from 'react';
 import Header from './components/Header';
-import Nav from './components/Nav';
 import Main from './components/Main';
 import Footer from './components/Footer';
 
 function App() {
   return (
-    <>
-        <Header/>
+    <Fragment className="container mx-auto bg-gray-200 rounded-xl shadow border p-8 m-10">
+        <Header className="container mx-auto bg-gray-200 rounded-xl shadow border p-8 m-10"/>
         <Main/>
         <Footer/>
 
-    </>
+    </Fragment>
   );
 }
 
