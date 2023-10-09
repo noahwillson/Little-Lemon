@@ -1,6 +1,6 @@
 const Nav = () => {
     return (
-        <nav className="flex-1 flex justify-content-flex-start align-items-center">
+        <nav class="flex-1 flex justify-content-flex-start align-items-center">
             <ul>
                 <li>
                     <a href="#home">Home</a>
