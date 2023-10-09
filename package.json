@@ -1,5 +1,5 @@
 {
-  "name": "littlelemon",
+  "name": "little-lemon",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,13 +12,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "tailwindcss build ./src/index.css -o ./dist/index.css && react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "buildcss": "tailwindcss build ./src/tailwind.css -o ./public/tailwind.css"
-
-
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -39,8 +36,6 @@
     ]
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.16",
-    "postcss": "^8.4.31",
     "tailwindcss": "^3.3.3"
   }
 }
