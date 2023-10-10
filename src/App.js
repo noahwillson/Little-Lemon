@@ -1,16 +1,17 @@
-import './App.css';
-import React, { Fragment } from 'react';
-import Header from './components/Header';
-import Main from './components/Main';
-import Footer from './components/Footer';
+import "./App.css";
+import React, { Fragment } from "react";
+import Nav from "./components/Nav";
+import Main from "./components/Main";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <Fragment>
-        <Header/>
-        <Main/>
-        <Footer/>
-
+      <div className="container mx-auto">
+        <Nav />
+        <Main />
+        <Footer />
+      </div>
     </Fragment>
   );
 }
