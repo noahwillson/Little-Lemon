@@ -1,8 +1,8 @@
 import React from "react";
 import img from "../images/restauranfood.jpg";
 import greeksalad from "../images/greek salad.jpg";
-import bruchetta from "../images/bruchetta.svg";
-import lemondessert from "../images/lemon dessert.jpg";
+// import bruchetta from "../images/bruchetta.svg";
+// import lemondessert from "../images/lemon dessert.jpg";
 const Main = () => {
   return (
     <main>
@@ -34,18 +34,44 @@ const Main = () => {
             Online Menu
           </a>
         </div>
-        <img src={greeksalad} alt="greek salad" className="w-20 h-20" />
-        <p>12.99</p>
-        <p>lorem ipsum dolor sit amet consectetur</p>
-        <button>Order a delivery</button>
-        <img src={bruchetta} alt="bruchetta" />
+        <section
+          style={{
+            width: "33%",
+            backgroundColor: "#CDCFDA",
+            borderTopLeftRadius: "10px",
+            borderTopRightRadius: "10px",
+          }}
+        >
+          <div>
+            <img
+              src={greeksalad}
+              alt="greek salad"
+              className="card-img w-100 h-100"
+            />
+          </div>
+          <div className="flex justify-between mt-4">
+            <span className="ml-4">greeksalad</span>
+            <span className="mr-4">12.99</span>
+          </div>
+          <div className="text-start	p-4">
+            <p className="mb-6 ">
+              The famous greek salad of crispy lettuce, peppers, olives and our
+              Chicago style feta cheese, garnished with crunchy garlic and
+              rosemary croutons.{" "}
+            </p>
+            <a href="/#" className="font-normal">
+              Order a delivery
+            </a>
+          </div>
+        </section>
+        {/* <img src={bruchetta} alt="bruchetta" />
         <p>5.99</p>
         <p>lorem ipsum dolor sit amet consectetur</p>
         <button>Order a delivery</button>
         <img src={lemondessert} alt="lemondessert" />
         <p>5.00</p>
         <p>lorem ipsum dolor sit amet consectetur</p>
-        <button>Order a delivery</button>
+        <button>Order a delivery</button> */}
       </section>
     </main>
   );
