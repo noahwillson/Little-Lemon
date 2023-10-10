@@ -2,12 +2,14 @@
   box-sizing: border-box;
 }
 
+.page-container {
+  @apply mx-auto;
+  width: 970px;
+}
+
 .main-section {
   background-color: rgb(75, 94, 87);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
+  padding: 15px;
 }
 .btn {
   background-color: #f4ce14;
@@ -20,10 +22,11 @@
   color: #fff;
 }
 .chef-photo {
-  height: 250px;
-  width: 250px;
+  @apply scale-y-[1.16];
+  top: 35px;
+  height: 280px;
+  width: 265px;
   position: relative;
-  bottom: -25px;
   border-radius: 10px;
   border: 1px solid #000;
 }

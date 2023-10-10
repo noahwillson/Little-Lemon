@@ -29,46 +29,38 @@ const specials = [
   },
 ];
 
+console.log(specials);
+
 const Main = () => {
   return (
     <main>
-      <section
-        className="xl:padding-1
-            wide:padding-r padding-b main-section"
-      >
-        <div className="right-section">
-          <h1 className="text-4xl" style={{ color: "#F4CE14" }}>
-            little lemon
-          </h1>
-          <h3 style={{ color: "#fff" }}>Chicago</h3>
-          <p className="my-5 description">
-            we are a family owned Mediterranean restaurant, focused on
-            traditional recipes served with a modern twist.
-          </p>
-          <a className="btn" href="/#">
-            Reserve a Table
-          </a>
-        </div>
-        <div className="left-section">
+      <section className="main-section">
+        <div className="page-container mx-auto flex flex-row items-center justify-between">
+          <div className="right-section">
+            <h1 className="text-4xl" style={{ color: "#F4CE14" }}>
+              little lemon
+            </h1>
+            <h3 className="text-white">Chicago</h3>
+            <p className="my-5 description">
+              we are a family owned Mediterranean restaurant, focused on
+              traditional recipes served with a modern twist.
+            </p>
+            <a className="btn" href="/#">
+              Reserve a Table
+            </a>
+          </div>
           <img className="chef-photo" src={img} alt="chef holds food" />
         </div>
       </section>
-      <section>
-        <div className="flex justify-between my-9">
+      <section className="page-container mx-auto mt-16">
+        <div className="flex justify-between mb-9">
           <p className="text-5xl font-medium">This weeks specials</p>
           <a href="/#" className="btn">
             Online Menu
           </a>
         </div>
-        <section
-          style={{
-            width: "33%",
-            backgroundColor: "#CDCFDA",
-            borderTopLeftRadius: "10px",
-            borderTopRightRadius: "10px",
-          }}
-        >
-          <div>
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <>
             {specials.map((special) => (
               <Card
                 key={special.title}
@@ -98,7 +90,7 @@ const Main = () => {
             <a href="/#" className="font-normal">
               Order a delivery
             </a> */}
-          </div>
+          </>
         </section>
         {/* <img src={bruchetta} alt="bruchetta" />
         <p>5.99</p>
