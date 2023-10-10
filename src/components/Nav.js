@@ -3,7 +3,7 @@ import Logo from "../images/Logo.svg";
 
 const Nav = () => {
   return (
-    <nav className="flex py-6 justify-between items-center">
+    <nav className="page-container mx-auto flex py-6 justify-between items-center">
       <img src={Logo} alt="Little Lemon" />
 
       <ul className="list-none flex">

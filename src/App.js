@@ -7,11 +7,9 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <Fragment>
-      <div className="container mx-auto">
-        <Nav />
-        <Main />
-        <Footer />
-      </div>
+      <Nav />
+      <Main />
+      <Footer />
     </Fragment>
   );
 }
