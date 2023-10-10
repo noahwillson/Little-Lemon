@@ -1,8 +1,34 @@
 import React from "react";
 import img from "../images/restauranfood.jpg";
-import greeksalad from "../images/greek salad.jpg";
-// import bruchetta from "../images/bruchetta.svg";
-// import lemondessert from "../images/lemon dessert.jpg";
+import Card from "./Card";
+
+const specials = [
+  {
+    title: "Greek Salad",
+    price: "$12.99",
+    description:
+      "The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.",
+    btn: "Order a delivery",
+    getImageSrc: () => require("../images/greek salad.jpg"),
+  },
+  {
+    title: "Bruchetta",
+    price: "$5.99",
+    description:
+      "Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.",
+    btn: "Order a delivery",
+    getImageSrc: () => require("../images/bruchetta.svg"),
+  },
+  {
+    title: "Lemon Dessert",
+    price: "$5.00",
+    description:
+      "This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined",
+    btn: "Order a delivery",
+    getImageSrc: () => require("../images/lemon dessert.jpg"),
+  },
+];
+
 const Main = () => {
   return (
     <main>
@@ -20,7 +46,7 @@ const Main = () => {
             traditional recipes served with a modern twist.
           </p>
           <a className="btn" href="/#">
-            Reserv a Table
+            Reserve a Table
           </a>
         </div>
         <div className="left-section">
@@ -28,7 +54,7 @@ const Main = () => {
         </div>
       </section>
       <section>
-        <div className="flex justify-between mt-9">
+        <div className="flex justify-between my-9">
           <p className="text-5xl font-medium">This weeks specials</p>
           <a href="/#" className="btn">
             Online Menu
@@ -43,7 +69,17 @@ const Main = () => {
           }}
         >
           <div>
-            <img
+            {specials.map((special) => (
+              <Card
+                key={special.title}
+                title={special.title}
+                price={special.price}
+                description={special.description}
+                btn={special.btn}
+                imageSrc={special.getImageSrc()}
+              />
+            ))}
+            {/* <img
               src={greeksalad}
               alt="greek salad"
               className="card-img w-100 h-100"
@@ -61,7 +97,7 @@ const Main = () => {
             </p>
             <a href="/#" className="font-normal">
               Order a delivery
-            </a>
+            </a> */}
           </div>
         </section>
         {/* <img src={bruchetta} alt="bruchetta" />
