@@ -4,7 +4,7 @@
 
 .page-container {
   @apply mx-auto;
-  width: 970px;
+  width: 1280px;
 }
 
 .main-section {
@@ -12,9 +12,18 @@
   padding: 15px;
 }
 .btn {
+  font-size: large;
   background-color: #f4ce14;
-  border-radius: 10px;
-  padding: 12px;
+  border-radius: 22px;
+  padding: 32px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 200px;
+  height: 70px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 .description {
   max-width: 250px;
@@ -22,12 +31,12 @@
   color: #fff;
 }
 .chef-photo {
-  @apply scale-y-[1.16];
+  @apply scale-y-[1.59];
   top: 35px;
   height: 280px;
-  width: 265px;
+  width: 402px;
   position: relative;
-  border-radius: 10px;
+  border-radius: 16px;
   border: 1px solid #000;
 }
 .card-img {

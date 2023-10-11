@@ -13,15 +13,18 @@ const Card = ({ imageSrc, title, price, description, btn }) => {
       <div>
         <img src={imageSrc} alt="" className="card-img w-full h-60" />
       </div>
-      <div className="p-4 flex flex-col gap-6">
+      <div className="p-4 flex flex-col gap-6 h-60 mx-3 my-3">
         <div className="flex flex-row items-center justify-between">
-          <span className="text-lg font-semibold">{title}</span>
-          <span className="text-orange-500 font-semibold">{price}</span>
+          <span className="text-lg font-semibold font-serif">{title}</span>
+          <span className="text-orange-500 font-semibold text-lg">{price}</span>
         </div>
-        <p className="text-gray-600">{description}</p>
-        <a href="/#" className="flex flex-row items-center gap-1 font-semibold">
+        <p className="text-gray-600 font-serif text-lg">{description}</p>
+        <a
+          href="/#"
+          className="flex flex-row items-center gap-1 font-semibold text-xl"
+        >
           {btn}
-          <MdOutlineDeliveryDining />
+          <MdOutlineDeliveryDining className="text-3xl" />
         </a>
       </div>
     </div>

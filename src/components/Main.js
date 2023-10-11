@@ -15,9 +15,9 @@ const specials = [
     title: "Bruchetta",
     price: "$5.99",
     description:
-      "Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.",
+      "Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil and made with love.",
     btn: "Order a delivery",
-    getImageSrc: () => require("../images/bruchetta.svg"),
+    getImageSrc: () => require("../images/bruchetta.jpg"),
   },
   {
     title: "Lemon Dessert",
@@ -37,12 +37,17 @@ const Main = () => {
       <section className="main-section">
         <div className="page-container mx-auto flex flex-row items-center justify-between">
           <div className="right-section">
-            <h1 className="text-4xl" style={{ color: "#F4CE14" }}>
-              little lemon
+            <h1
+              className="text-7xl font-medium font-serif"
+              style={{ color: "#F4CE14" }}
+            >
+              Little Lemon
             </h1>
-            <h3 className="text-white">Chicago</h3>
-            <p className="my-5 description">
-              we are a family owned Mediterranean restaurant, focused on
+            <h3 className="text-white text-4xl font-medium font-serif">
+              Chicago
+            </h3>
+            <p className="my-5 description text-2xl font-medium">
+              We are a family owned Mediterranean restaurant, focused on
               traditional recipes served with a modern twist.
             </p>
             <a className="btn" href="/#">
@@ -54,7 +59,9 @@ const Main = () => {
       </section>
       <section className="page-container mx-auto mt-16">
         <div className="flex justify-between mb-9">
-          <p className="text-5xl font-medium">This weeks specials</p>
+          <p className="text-5xl font-semibold font-serif">
+            This weeks specials
+          </p>
           <a href="/#" className="btn">
             Online Menu
           </a>
