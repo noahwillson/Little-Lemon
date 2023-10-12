@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../images/Logo.svg";
 
 const Nav = () => {
@@ -7,27 +8,29 @@ const Nav = () => {
       <img src={Logo} alt="Little Lemon" className="w-72" />
 
       <ul className="list-none flex">
-        <li className=" mx-4">
-          <a href="#home">Home</a>
+        <li className="active mx-4">
+          <Link to="/">Home</Link>
         </li>
         <li className="mx-4">
-          <a href="#about">About</a>
+          <Link to="/about">About</Link>
         </li>
         <li className="mx-4">
-          <a href="#menu">Menu</a>
+          <Link to="/menu">Menu</Link>
         </li>
         <li className="mx-4">
-          <a href="#reservations">Reservations</a>
+          <Link to="/reservations">Reservations</Link>
         </li>
         <li className="mx-4">
-          <a href="#orderonline">Order Online</a>
+          <Link to="/orderonline">Order Online</Link>
         </li>
         <li className="ml-4">
-          <a href="#login">Login</a>
+          <Link to="/login">Login</Link>
         </li>
       </ul>
     </nav>
   );
 };
+
+// Define your components for each route
 
 export default Nav;

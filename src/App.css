@@ -7,10 +7,16 @@
   width: 1280px;
 }
 
-.main-section {
-  background-color: rgb(75, 94, 87);
-  padding: 15px;
+.page-container li.active {
+  background-color: #f4ce14;
+  padding: 16px;
 }
+
+.page-container li:hover {
+  background-color: rgb(75, 94, 87);
+  padding: 16px;
+}
+
 .btn {
   font-size: large;
   background-color: #f4ce14;
@@ -28,7 +34,7 @@
 .description {
   max-width: 250px;
   text-wrap: wrap;
-  color: #fff;
+  color: gray;
 }
 .chef-photo {
   @apply scale-y-[1.59];

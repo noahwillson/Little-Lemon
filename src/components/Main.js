@@ -43,10 +43,10 @@ const Main = () => {
             >
               Little Lemon
             </h1>
-            <h3 className="text-white text-4xl font-medium font-serif">
+            <h3 className="text-gray-600 text-4xl font-medium font-serif">
               Chicago
             </h3>
-            <p className="my-5 description text-2xl font-medium">
+            <p className="text-gray-600 my-5 description text-2xl font-medium">
               We are a family owned Mediterranean restaurant, focused on
               traditional recipes served with a modern twist.
             </p>
