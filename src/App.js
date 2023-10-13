@@ -1,4 +1,3 @@
-import "./App.css";
 import React, { Fragment } from "react";
 import Nav from "./components/Nav";
 import Main from "./components/Main";
