@@ -2,7 +2,7 @@ import React from "react";
 import NavItem from "./NavItem";
 import Logo from "../images/Logo.svg";
 
-const navLinks = [
+export const navLinks = [
   { id: 1, text: "Home", to: "/" },
   { id: 2, text: "About", to: "/about" },
   { id: 3, text: "Menu", to: "/menu" },
