@@ -34,8 +34,8 @@ console.log(specials);
 const Main = () => {
   return (
     <main>
-      <section className="main-section">
-        <div className="page-container mx-auto flex flex-row items-center justify-between">
+      <section className="container mx-auto">
+        <div className="mx-auto flex flex-row items-center justify-between">
           <div className="right-section">
             <h1
               className="text-7xl font-medium font-serif"
@@ -54,10 +54,10 @@ const Main = () => {
               Reserve a Table
             </a>
           </div>
-          <img className="chef-photo" src={img} alt="chef holds food" />
+          <img className="w-1/2 " src={img} alt="chef holds food" />
         </div>
       </section>
-      <section className="page-container mx-auto mt-16">
+      <section className="container mx-auto mt-16">
         <div className="flex justify-between mb-9">
           <p className="text-5xl font-semibold font-serif">
             This weeks specials
