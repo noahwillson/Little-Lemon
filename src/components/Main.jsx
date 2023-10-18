@@ -54,7 +54,11 @@ const Main = () => {
               Reserve a Table
             </a>
           </div>
-          <img className="w-1/2 " src={img} alt="chef holds food" />
+          <img
+            className="w-1/2 h-[600px] rounded-3xl "
+            src={img}
+            alt="chef holds food"
+          />
         </div>
       </section>
       <section className="container mx-auto mt-16">
