@@ -34,15 +34,10 @@ console.log(specials);
 const Main = () => {
   return (
     <main>
-      <section className="container mx-auto">
+      <section className="container flex mx-auto bg-[#495E57]">
         <div className="mx-auto flex flex-row items-center justify-between">
           <div className="right-section">
-            <h1
-              className="text-7xl font-medium font-serif"
-              style={{ color: "#F4CE14" }}
-            >
-              Little Lemon
-            </h1>
+            <h1 className="text-7xl font-medium font-serif">Little Lemon</h1>
             <h3 className="text-gray-600 text-4xl font-medium font-serif">
               Chicago
             </h3>
