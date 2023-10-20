@@ -34,7 +34,7 @@ console.log(specials);
 const Main = () => {
   return (
     <main>
-      <section className="container flex mx-auto bg-[#495E57]">
+      <section className="container flex mx-auto">
         <div className="mx-auto flex flex-row items-center justify-between">
           <div className="right-section">
             <h1 className="text-7xl font-medium font-serif">Little Lemon</h1>
