@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import Nav from "./components/Nav";
-import Main from "./components/Main";
+import Home from "./pages/Home.jsx";
 import Footer from "./components/Footer";
 import About from "./pages/About.js";
 import Menu from "./pages/Menu.js";
@@ -13,17 +13,15 @@ function App() {
   return (
     <Fragment>
       <Nav />
-      <div>
-        <Routes>
-          <Route path="/" exact component={<Main />} />
-          <Route path="/about" component={<About />} />
-          <Route path="/menu" component={<Menu />} />
-          <Route path="/reservations" component={<Reservations />} />
-          <Route path="/orderonline" component={<OrderOnline />} />
-          <Route path="/login" component={<Login />} />
-        </Routes>
-      </div>
-      <Main />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/reservations" element={<Reservations />} />
+        <Route path="/orderonline" element={<OrderOnline />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
       <Footer />
     </Fragment>
   );
